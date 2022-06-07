@@ -1,0 +1,10 @@
+p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    direction: ltr;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    line-height: 23px;
+    text-align: center;
+}
