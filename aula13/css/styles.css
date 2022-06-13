@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.grid {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear:both;
+}
+
+.grid .col {
+    height: 300px;
+    width: 280px;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    box-shadow: 0 0 15px 10px rgb(134, 134, 134);
+}
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background: rgb(20, 20, 20, 0.75);
+}
+
+.menu ul{
+   list-style: none;
+   display: block;
+   max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.menu ul li{
+  float: left;
+ }
+ .menu ul li a{
+    display: block;
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+   }
+
+   .menu ul li a:hover{
+    background: #333;
+   }
+
+   .full-page {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-top: 73px;
+    height: 100vh;
+    background: palevioletred;
+}
+ 
+.full-page-content {
+    max-width: 100%;
+    padding-top: 0 30px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+    }
+    @media (min-width: 569px) and (max-width:768px){
+        .grid .col {
+            width: 50%;
+        }
+}
+
+@media all and (min-width: 769px) and (max-width:1200px){
+    .grid .col {
+        width: 33.33%;
+        }
+}
+
+@media all and (min-width: 769px) and (max-width:1200px){
+    .grid .col {
+        width: 33.33%;
+        }
+}
+
+@media all and (min-width: 1200px) {
+    .grid .col {
+        width: 25%;
+    }
+}
