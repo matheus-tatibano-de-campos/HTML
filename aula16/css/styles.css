@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 40px;
+    font:sans-serif;
+}
+
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.grid div{
+    background: pink;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+    background: red;
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }}
